@@ -1,8 +1,10 @@
+/* eslint-disable import/no-extraneous-dependencies */
 // mengimpor dotenv dan menjalankan konfigurasinya
 require('dotenv').config();
 
 const Hapi = require('@hapi/hapi');
-const Jwt = require('@hapi/jwt')
+const Jwt = require('@hapi/jwt');
+
 // notes
 const notes = require('./api/notes');
 const NotesService = require('./services/postgres/NotesService');
